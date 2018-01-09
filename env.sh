@@ -12,7 +12,7 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 defaults write com.apple.dock autohide -bool true;
 killAll dock;
 
-1# Write bash settings
+# Write bash settings
 cp ~/mac-env-master/.bash_profile ~/.bash_profile
 cp ~/mac-env-master/.bashrc ~/.bashrc
 
@@ -35,6 +35,7 @@ source  ~/.zshrc
 open "/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app"
 open "/Applications/Backup and Sync.app"
 open "/Applications/Dropbox.app"
+
 # Nodejs
 curl -L git.io/nodebrew | perl - setup
 nodebrew install-binary stable
