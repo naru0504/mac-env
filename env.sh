@@ -33,7 +33,8 @@ source  ~/.zshrc
 
 # Launch Creative Cloud Installer
 open "/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app"
-
+open "/Applications/Backup and Sync.app"
+open "/Applications/Dropbox.app"
 # Nodejs
 curl -L git.io/nodebrew | perl - setup
 nodebrew install-binary stable
