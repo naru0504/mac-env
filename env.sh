@@ -31,6 +31,11 @@ cp ~/mac-env-master/.zshrc ~/.zshrc
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 source  ~/.zshrc
 
+# Git Directories
+mkdir ~/Repositories
+echo "ssh-keygen -t rsa -C your@email.adress"
+echo "cp  ~/mac-env-master/config ~/.ssh/config"
+
 # Launch Creative Cloud Installer
 open "/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app"
 open "/Applications/Backup and Sync.app"
@@ -45,10 +50,3 @@ npm i -g create-react-app preact-cli hexo-cli gatsby-cli firebase-tools gulp
 
 # Users Files
 cp ~/mac-env-master/.editorconfig ~/.editorconfig
-
-# Git Directories
-mkdir ~/Repositories
-echo "TODO - Get Accsess Tokens of GitHub and bitbuckets"
-
-# Generate ssh
-ssh-keygen -t rsa
