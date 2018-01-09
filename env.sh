@@ -36,10 +36,12 @@ mkdir ~/Repositories
 echo "ssh-keygen -t rsa -C your@email.adress"
 echo "cp  ~/mac-env-master/config ~/.ssh/config"
 
-# Launch Creative Cloud Installer
-open "/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app"
+# Launch Installers
+open "/Applications/Creative Cloud Installer.app"
+open '/Applications/CraftManager.app'
 open "/Applications/Backup and Sync.app"
 open "/Applications/Dropbox.app"
+open '/Applications/Cheatsheet.app'
 
 # Nodejs
 curl -L git.io/nodebrew | perl - setup
@@ -50,3 +52,6 @@ npm i -g create-react-app preact-cli hexo-cli gatsby-cli firebase-tools gulp
 
 # Users Files
 cp ~/mac-env-master/.editorconfig ~/.editorconfig
+
+# Download Links
+open http://sketchrunner.com/
