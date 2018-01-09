@@ -22,7 +22,7 @@ curl -L git.io/nodebrew | perl - setup
 nodebrew install stable
 nodebrew use stable
 
-npm i -g create-react-app preact-cli yarn hexo-cli gatsby-cli firebase-tools gulp
+npm i -g create-react-app preact-cli hexo-cli gatsby-cli firebase-tools gulp
 
 # Users Files
 cp ~/mac-env-master/.editorconfig ~/.editorconfig
