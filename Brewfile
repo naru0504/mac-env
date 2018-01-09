@@ -1,10 +1,10 @@
-tap "homebrew/science"
-tap "homebrew/core"
-tap "homebrew/bundle"
-tap "homebrew/services"
+tap "caskroom/cask"
 tap "caskroom/fonts"
 tap "caskroom/versions"
-tap "caskroom/cask"
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/science"
+tap "homebrew/services"
 cask "java"
 brew "ansible"
 brew "duck", link: false
@@ -14,7 +14,6 @@ brew "git-lfs"
 brew "hub"
 brew "little-cms2"
 brew "mas"
-brew "metabase"
 brew "pngquant"
 brew "postgresql", restart_service: true
 brew "r"
@@ -30,20 +29,20 @@ cask "cyberduck"
 cask "docker"
 cask "dropbox"
 cask "evernote"
-cask "fiddler"
 cask "firefox"
-cask "font-droid-sans"
 cask "genymotion"
 cask "google-backup-and-sync"
+cask "google-chrome"
+cask "google-japanese-ime"
 cask "i1profiler"
 cask "imageoptim"
 cask "invisionsync"
+cask "iterm2"
 cask "kactus"
 cask "karabiner"
 cask "karabiner-elements"
 cask "metabase-app"
 cask "mono-mdk"
-cask "mysimbl"
 cask "origami-studio"
 cask "pgadmin4"
 cask "phpstorm"
@@ -76,13 +75,14 @@ cask "caskroom/fonts/font-noto-sans-cjk-jp"
 cask "caskroom/fonts/font-open-sans"
 cask "caskroom/fonts/font-open-sans-condensed"
 cask "caskroom/fonts/font-ricty-diminished"
-cask "caskroom/fonts/font-symbola"
 mas "Affinity Designer", id: 824171161
 mas "AnyDo", id: 944960179
 mas "App for Instagram", id: 904477302
 mas "Disk Diag", id: 672206759
 mas "feedly", id: 865500966
 mas "Flinto", id: 1021880828
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Kobito", id: 896624060
 mas "LINE", id: 539883307
@@ -91,7 +91,7 @@ mas "Pages", id: 409201541
 mas "Pixelmator", id: 407963104
 mas "Pocket", id: 568494494
 mas "Replia", id: 988307015
+mas "Slack", id: 803453959
 mas "The Unarchiver", id: 425424353
-mas "TheHub", id: 819619479
 mas "Trello", id: 1278508951
 mas "Type Fu", id: 509818877

@@ -36,7 +36,7 @@ open "/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.a
 
 # Nodejs
 curl -L git.io/nodebrew | perl - setup
-nodebrew install stable
+nodebrew install-binary stable
 nodebrew use stable
 
 npm i -g create-react-app preact-cli hexo-cli gatsby-cli firebase-tools gulp
