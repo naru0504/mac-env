@@ -48,10 +48,14 @@ curl -L git.io/nodebrew | perl - setup
 nodebrew install-binary stable
 nodebrew use stable
 
-npm i -g create-react-app preact-cli hexo-cli gatsby-cli firebase-tools gulp
+# Yarn modules
+yarn global add create-react-app preact-cli hexo-cli gatsby-cli firebase-tools gulp parcel-bundler docusaurus-init gitbook @storybook/cli
 
 # Users Files
 cp ~/mac-env-master/.editorconfig ~/.editorconfig
 
 # Download Links
 open http://sketchrunner.com/
+
+# Extensions for VisualStudio Code
+code --install-extension EditorConfig.EditorConfig
