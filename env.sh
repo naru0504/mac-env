@@ -59,3 +59,14 @@ open http://sketchrunner.com/
 
 # Extensions for VisualStudio Code
 code --install-extension EditorConfig.EditorConfig
+
+# Pyenv
+pyenv install 3.6.4
+pyenv install anaconda3-5.0.1
+pyenv versions
+pyenv global 3.6.4
+source .zshrc
+easy_install pip
+source .zshrc
+pip install requests
+pip install beautifulsoup4
