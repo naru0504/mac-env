@@ -67,6 +67,5 @@ pyenv versions
 pyenv global 3.6.4
 source .zshrc
 easy_install pip
-source .zshrc
 pip install requests
 pip install beautifulsoup4
