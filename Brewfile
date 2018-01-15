@@ -101,3 +101,4 @@ mas "Slack", id: 803453959
 mas "The Unarchiver", id: 425424353
 mas "Trello", id: 1278508951
 mas "Type Fu", id: 509818877
+mas "Xcode", id: 497799835
