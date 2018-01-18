@@ -1,18 +1,50 @@
 # Mac Local Settings
 
 defaults write NSGlobalDomain AppleLanguages "(en-US)"
-defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
-defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
-defaults write -g com.apple.trackpad.scaling -float 1
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+
+# Enable `tap to click`
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+# SecondaryClick
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
+
+defaults write -g com.apple.trackpad.scaling -float 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
+
+defaults write com.apple.menuextra.clock 'DateFormat' -string 'EEE N:mm'
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+defaults write com.apple.CrashReporter DialogType -string "none"
+
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebkitDeveloperExtrasEnabledPreferenceKey -bool truedefaults write com.apple.menuextra.battery ShowPercent -string "YES"
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock mru-spaces -bool false
+defaults write com.apple.dock persistent-apps -array
+defaults write com.apple.dock magnification -bool true
+defaults write com.apple.dock tilesize -int 55
+defaults write com.apple.finder QuitMenuItem -bool true
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+defaults write com.apple.finder ShowStatusBar -bool true
+defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder ShowTabView -bool true
+
 killall Dock
 killall Finder
+killall SystemUIServer
 
 # Write bash settings
 cp ~/mac-env-master/.bash_profile ~/.bash_profile
