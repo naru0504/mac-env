@@ -9,8 +9,10 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
 defaults write -g com.apple.trackpad.scaling -float 1
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-defaults write com.apple.dock autohide -bool true;
-killAll dock;
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock mru-spaces -bool false
+killall Dock
+killall Finder
 
 # Write bash settings
 cp ~/mac-env-master/.bash_profile ~/.bash_profile
