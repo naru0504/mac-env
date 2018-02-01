@@ -84,7 +84,7 @@ nodebrew install-binary stable
 nodebrew use stable
 
 # Yarn modules
-yarn global add create-react-app preact-cli hexo-cli gatsby-cli electron electron-packager firebase-tools gulp parcel-bundler docusaurus-init gitbook @storybook/cli
+yarn global add create-react-app preact-cli hexo-cli gatsby-cli electron electron-packager firebase-tools gulp parcel-bundler browser-sync docusaurus-init gitbook @storybook/cli
 
 # Users Files
 cp ~/mac-env-master/.editorconfig ~/.editorconfig
