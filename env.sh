@@ -21,7 +21,7 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGe
 defaults write -g com.apple.trackpad.scaling -float 1
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
 
-defaults write com.apple.menuextra.clock 'DateFormat' -string 'EEE N:mm'
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM h:mm a"
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write com.apple.CrashReporter DialogType -string "none"
