@@ -20,6 +20,9 @@ defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
+## Never save to Cloud
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud false
+
 ## Show Scrollbar Automatically
 defaults write NSGlobalDomain AppleShowScrollBars "automatic"
 
@@ -85,9 +88,6 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 ##
 defaults write com.apple.Finder FXPreferredViewStyle clmv
-
-## Disable the warning of Empty Trash
-# defaults write com.apple.finder EmptyTrashSecurely -bool true
 
 ## Reload Local Settings
 killall Dock
