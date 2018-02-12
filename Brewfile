@@ -103,6 +103,8 @@ mas "Pixelmator", id: 407963104
 mas "Pocket", id: 568494494
 mas "Replia", id: 988307015
 mas "Slack", id: 803453959
+mas "stone", id: 1230288277
+mas "Textwell", id: 905944937
 mas "The Unarchiver", id: 425424353
 mas "Trello", id: 1278508951
 mas "Type Fu", id: 509818877
