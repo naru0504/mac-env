@@ -65,7 +65,7 @@ defaults write com.apple.finder QLEnableTextSelection -bool true
 ## Setting of Safari
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
-defaults write com.apple.Safari WebkitDeveloperExtrasEnabledPreferenceKey -bool truedefaults write com.apple.menuextra.battery ShowPercent -string "YES"
+defaults write com.apple.Safari WebkitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 
 ## Setting of Dock
