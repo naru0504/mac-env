@@ -1,3 +1,8 @@
+# Set val of email and user name
+
+username="Naruhito Kubota"
+email="naru.kubota@gmail.com"
+
 # Mac Local Settings
 
 echo "This script will set properties on OSX"
@@ -110,7 +115,8 @@ cp ~/mac-env-master/.bashrc ~/.bashrc
 ## Install brew modules
 
 cp ~/mac-env-master/Brewfile ~/Brewfile
-brew bundle
+brew bundle & pid2 = $!
+wait $pid2
 
 # zsh - prezto
 chsh -s /bin/zsh
@@ -120,8 +126,15 @@ source  ~/.zshrc
 
 # Git Directories
 mkdir ~/Repositories
-echo "ssh-keygen -t rsa -C your@email.adress"
-echo "cp  ~/mac-env-master/config ~/.ssh/config"
+mkdir ~/.ssh
+cd ~/.ssh
+ssh-keygen -t rsa -C $email
+cp ~/mac-env-master/config ~/.ssh/config
+cd ~/
+
+git config --global user.name "$username"
+git config --global user.email "$email"
+
 
 # Launch Installers
 open '/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app'
@@ -132,9 +145,12 @@ open '/Applications/Dropbox.app'
 open '/Applications/Cheatsheet.app'
 
 # Install Nodejs with Nodebrew
-curl -L git.io/nodebrew | perl - setup
+curl -L git.io/nodebrew | perl - setup & pid2 = $!
+wait $pid2
+source ~/.zshrc
 nodebrew install-binary stable
 nodebrew use stable
+
 
 # Yarn modules
 yarn global add create-react-app preact-cli hexo-cli gatsby-cli electron electron-packager firebase-tools gulp parcel-bundler browser-sync docusaurus-init gitbook @storybook/cli
@@ -152,9 +168,11 @@ code --install-extension EditorConfig.EditorConfig
 pyenv install 3.6.4
 pyenv install anaconda3-5.0.1
 pyenv versions
-pyenv global 3.6.4
+pyenv global 3.6.4 & pid3 = $!
+wait $pid3
 source .zshrc
-easy_install pip
+easy_install pip & pid4 = $!
+wait $pid4
 pip install requests
 pip install beautifulsoup4
 pip install lxml
