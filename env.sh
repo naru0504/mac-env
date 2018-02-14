@@ -1,7 +1,7 @@
 # Set val of email and user name
 
-username="Naruhito Kubota"
-email="naru.kubota@gmail.com"
+username="Naruhito Kubota" # TODO - Change this to your name
+email="naru.kubota@gmail.com" # TODO - Change this to your email address
 
 # Mac Local Settings
 
@@ -94,8 +94,7 @@ defaults write com.apple.finder ShowTabView -bool true
 ## Avoid making .DS_Store on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
-
-##
+## Set Finder view mode
 defaults write com.apple.Finder FXPreferredViewStyle clmv
 
 ## Reload Local Settings
@@ -115,8 +114,8 @@ cp ~/mac-env-master/.bashrc ~/.bashrc
 ## Install brew modules
 
 cp ~/mac-env-master/Brewfile ~/Brewfile
-brew bundle & pid2 = $!
-wait $pid2
+brew bundle & pid1 = $!
+wait $pid1
 
 # zsh - prezto
 chsh -s /bin/zsh
@@ -129,8 +128,18 @@ mkdir ~/Repositories
 mkdir ~/.ssh
 cd ~/.ssh
 ssh-keygen -t rsa -C $email
-cp ~/mac-env-master/config ~/.ssh/config
 cd ~/
+
+{
+  echo "Host bitbucket.org"
+  echo "  HostName bitbucket.org"
+  echo "  IdentityFile ~/.ssh/id_rsa"
+  echo "  User git"
+  echo "Host github"
+  echo "  HostName github.com"
+  echo "  IdentityFile ~/.ssh/id_rsa"
+  echo "  User git"
+} > ~/.ssh/config
 
 git config --global user.name "$username"
 git config --global user.email "$email"
