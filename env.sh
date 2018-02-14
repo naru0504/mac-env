@@ -102,7 +102,20 @@ killall Dock
 killall Finder
 killall SystemUIServer
 
+#####################################################
+
 # Write bash settings
+{
+  echo "if [ -f ~/.bashrc ] ; then"
+  echo ". ~/.bashrc"
+  echo "fi"
+} > ~/.bashrc
+
+{
+  echo 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"'
+} > ~/.bashtest
+
+
 cp ~/mac-env-master/.bash_profile ~/.bash_profile
 cp ~/mac-env-master/.bashrc ~/.bashrc
 
@@ -160,7 +173,6 @@ source ~/.zshrc
 nodebrew install-binary stable
 nodebrew use stable
 
-
 # Yarn modules
 yarn global add create-react-app preact-cli hexo-cli gatsby-cli electron electron-packager firebase-tools gulp parcel-bundler browser-sync docusaurus-init gitbook @storybook/cli
 
@@ -185,7 +197,3 @@ wait $pid4
 pip install requests
 pip install beautifulsoup4
 pip install lxml
-
-
-# Edit Settings of git
-git config --global --edit
