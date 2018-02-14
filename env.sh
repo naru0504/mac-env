@@ -124,7 +124,8 @@ echo "ssh-keygen -t rsa -C your@email.adress"
 echo "cp  ~/mac-env-master/config ~/.ssh/config"
 
 # Launch Installers
-open '/Applications/Creative Cloud Installer.app'
+open '/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app'
+open '/usr/local/Caskroom/google-japanese-ime/latest/GoogleJapaneseInput.pkg'
 open '/Applications/CraftManager.app'
 open '/Applications/Backup and Sync.app'
 open '/Applications/Dropbox.app'
@@ -157,3 +158,7 @@ easy_install pip
 pip install requests
 pip install beautifulsoup4
 pip install lxml
+
+
+# Edit Settings of git
+git config --global --edit
