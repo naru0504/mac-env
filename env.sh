@@ -141,7 +141,13 @@ mkdir ~/Repositories
 mkdir ~/.ssh
 cd ~/.ssh
 ssh-keygen -t rsa -C $email
+chmod 600 id_rsa
 cd ~/
+
+open 'https://github.com/settings/keys'
+open 'https://bitbucket.org/account/user/'
+
+cat ~/.ssh/id_rsa.pub | pbcopy
 
 {
   echo "Host bitbucket.org"
