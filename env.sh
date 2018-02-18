@@ -111,10 +111,6 @@ killall SystemUIServer
   echo "fi"
 } > ~/.bashrc
 
-{
-  echo 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"'
-} > ~/.bashtest
-
 # Homebrew
 
 ## Install Homebrew
@@ -128,6 +124,7 @@ wait $pid1
 
 # zsh - prezto
 chsh -s /bin/zsh
+touch ~/.zprofile
 cp ~/mac-env-master/.zshrc ~/.zshrc
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 source  ~/.zshrc
@@ -166,7 +163,7 @@ open '/usr/local/Caskroom/google-japanese-ime/latest/GoogleJapaneseInput.pkg'
 open '/Applications/CraftManager.app'
 open '/Applications/Backup and Sync.app'
 open '/Applications/Dropbox.app'
-open '/Applications/Cheatsheet.app'
+open '/Applications/Recordit.app'
 
 # Install Nodejs with Nodebrew
 curl -L git.io/nodebrew | perl - setup & pid2 = $!
