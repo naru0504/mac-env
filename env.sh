@@ -166,7 +166,7 @@ open '/Applications/Dropbox.app'
 open '/Applications/Recordit.app'
 
 # Install Nodejs with Nodebrew
-curl -L git.io/nodebrew | perl - setup &
+curl -L git.io/nodebrew | perl - setupt &
 wait
 source ~/.zshrc
 nodebrew install-binary stable
@@ -192,7 +192,7 @@ pyenv global 3.6.4 &
 wait
 
 source .zshrc
-easy_install pip
+easy_install pip &
 wait
 
 pip install requests beautifulsoup4 lxml
