@@ -119,8 +119,8 @@ killall SystemUIServer
 ## Install brew modules
 
 cp ~/mac-env-master/Brewfile ~/Brewfile
-brew bundle & pid1 = $!
-wait $pid1
+brew bundle &
+wait
 
 # zsh - prezto
 chsh -s /bin/zsh
@@ -166,8 +166,8 @@ open '/Applications/Dropbox.app'
 open '/Applications/Recordit.app'
 
 # Install Nodejs with Nodebrew
-curl -L git.io/nodebrew | perl - setup & pid2 = $!
-wait $pid2
+curl -L git.io/nodebrew | perl - setup &
+wait
 source ~/.zshrc
 nodebrew install-binary stable
 nodebrew use stable
@@ -188,11 +188,13 @@ code --install-extension EditorConfig.EditorConfig
 pyenv install 3.6.4
 pyenv install anaconda3-5.0.1
 pyenv versions
-pyenv global 3.6.4 & pid3 = $!
-wait $pid3
+pyenv global 3.6.4 &
+wait
+
 source .zshrc
-easy_install pip & pid4 = $!
-wait $pid4
+easy_install pip
+wait
+
 pip install requests
 pip install beautifulsoup4
 pip install lxml
