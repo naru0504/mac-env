@@ -195,6 +195,4 @@ source .zshrc
 easy_install pip
 wait
 
-pip install requests
-pip install beautifulsoup4
-pip install lxml
+pip install requests beautifulsoup4 lxml
