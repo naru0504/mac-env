@@ -115,10 +115,6 @@ killall SystemUIServer
   echo 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"'
 } > ~/.bashtest
 
-
-cp ~/mac-env-master/.bash_profile ~/.bash_profile
-cp ~/mac-env-master/.bashrc ~/.bashrc
-
 # Homebrew
 
 ## Install Homebrew
