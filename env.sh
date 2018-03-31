@@ -111,14 +111,6 @@ killall SystemUIServer
   echo "fi"
 } > ~/.bashrc
 
-{
-  echo 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"'
-} > ~/.bashtest
-
-
-cp ~/mac-env-master/.bash_profile ~/.bash_profile
-cp ~/mac-env-master/.bashrc ~/.bashrc
-
 # Homebrew
 
 ## Install Homebrew
@@ -127,11 +119,12 @@ cp ~/mac-env-master/.bashrc ~/.bashrc
 ## Install brew modules
 
 cp ~/mac-env-master/Brewfile ~/Brewfile
-brew bundle & pid1 = $!
-wait $pid1
+brew bundle &
+wait
 
 # zsh - prezto
 chsh -s /bin/zsh
+touch ~/.zprofile
 cp ~/mac-env-master/.zshrc ~/.zshrc
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 source  ~/.zshrc
@@ -170,11 +163,11 @@ open '/usr/local/Caskroom/google-japanese-ime/latest/GoogleJapaneseInput.pkg'
 open '/Applications/CraftManager.app'
 open '/Applications/Backup and Sync.app'
 open '/Applications/Dropbox.app'
-open '/Applications/Cheatsheet.app'
+open '/Applications/Recordit.app'
 
 # Install Nodejs with Nodebrew
-curl -L git.io/nodebrew | perl - setup & pid2 = $!
-wait $pid2
+curl -L git.io/nodebrew | perl - setupt &
+wait
 source ~/.zshrc
 nodebrew install-binary stable
 nodebrew use stable
@@ -195,11 +188,11 @@ code --install-extension EditorConfig.EditorConfig
 pyenv install 3.6.4
 pyenv install anaconda3-5.0.1
 pyenv versions
-pyenv global 3.6.4 & pid3 = $!
-wait $pid3
+pyenv global 3.6.4 &
+wait
+
 source .zshrc
-easy_install pip & pid4 = $!
-wait $pid4
-pip install requests
-pip install beautifulsoup4
-pip install lxml
+easy_install pip &
+wait
+
+pip install requests beautifulsoup4 lxml
