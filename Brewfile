@@ -30,6 +30,7 @@ brew "vitorgalvao/tiny-scripts/cask-repair"
 cask "adobe-creative-cloud"
 cask "atom"
 cask "chatwork"
+cask "cheatsheet"
 cask "craftmanager"
 cask "cyberduck"
 cask "docker"
@@ -40,6 +41,7 @@ cask "firefox"
 cask "framer"
 cask "genymotion"
 cask "gitbook-editor"
+cask "gitter"
 cask "google-backup-and-sync"
 cask "google-chrome"
 cask "google-japanese-ime"
@@ -50,6 +52,7 @@ cask "iterm2"
 cask "kactus"
 cask "karabiner"
 cask "karabiner-elements"
+cask "kindle"
 cask "marvel"
 cask "metabase-app"
 cask "mono-mdk"
@@ -102,6 +105,7 @@ mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Kobito", id: 896624060
 mas "LINE", id: 539883307
+mas "MindNode", id: 1289197285
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pixelmator", id: 407963104
