@@ -125,6 +125,9 @@ wait
 # zsh - prezto
 touch ~/.zprofile
 cp ~/mac-env-master/.zshrc ~/.zshrc
+zsh &
+wait
+
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 source  ~/.zshrc
 chsh -s /bin/zsh
