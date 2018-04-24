@@ -123,11 +123,11 @@ brew bundle &
 wait
 
 # zsh - prezto
-chsh -s /bin/zsh
 touch ~/.zprofile
 cp ~/mac-env-master/.zshrc ~/.zshrc
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 source  ~/.zshrc
+chsh -s /bin/zsh
 
 # Git Directories
 mkdir ~/Repositories
