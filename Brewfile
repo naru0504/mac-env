@@ -30,7 +30,6 @@ brew "vitorgalvao/tiny-scripts/cask-repair"
 cask "adobe-creative-cloud"
 cask "atom"
 cask "chatwork"
-cask "cheatsheet"
 cask "craftmanager"
 cask "cyberduck"
 cask "docker"
@@ -50,8 +49,6 @@ cask "imageoptim"
 cask "invisionsync"
 cask "iterm2"
 cask "kactus"
-cask "karabiner"
-cask "karabiner-elements"
 cask "kindle"
 cask "marvel"
 cask "metabase-app"
@@ -94,7 +91,6 @@ cask "caskroom/fonts/font-open-sans"
 cask "caskroom/fonts/font-open-sans-condensed"
 cask "caskroom/fonts/font-ricty-diminished"
 mas "Affinity Designer", id: 824171161
-mas "AnyDo", id: 944960179
 mas "App for Instagram", id: 904477302
 mas "Boxy", id: 1053031090
 mas "Disk Diag", id: 672206759
