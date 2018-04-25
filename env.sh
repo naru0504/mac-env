@@ -169,7 +169,7 @@ open '/Applications/Dropbox.app'
 open '/Applications/Recordit.app'
 
 # Install Nodejs with Nodebrew
-curl -L git.io/nodebrew | perl - setupt &
+curl -L git.io/nodebrew | perl - setup &
 wait
 source ~/.zshrc
 nodebrew install-binary stable
