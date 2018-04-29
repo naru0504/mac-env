@@ -37,6 +37,7 @@ cask "dropbox"
 cask "evernote"
 cask "figma"
 cask "firefox"
+cask "flinto"
 cask "framer"
 cask "genymotion"
 cask "gitbook-editor"
@@ -91,11 +92,9 @@ cask "caskroom/fonts/font-open-sans"
 cask "caskroom/fonts/font-open-sans-condensed"
 cask "caskroom/fonts/font-ricty-diminished"
 mas "Affinity Designer", id: 824171161
-mas "App for Instagram", id: 904477302
 mas "Boxy", id: 1053031090
 mas "Disk Diag", id: 672206759
 mas "feedly", id: 865500966
-mas "Flinto", id: 1021880828
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
