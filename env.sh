@@ -104,13 +104,6 @@ killall SystemUIServer
 
 #####################################################
 
-# Write bash settings
-{
-  echo "if [ -f ~/.bashrc ] ; then"
-  echo ". ~/.bashrc"
-  echo "fi"
-} > ~/.bashrc
-
 # Homebrew
 
 ## Install Homebrew
@@ -123,14 +116,25 @@ brew bundle &
 wait
 
 # zsh - prezto
-touch ~/.zprofile
-cp ~/mac-env-master/.zshrc ~/.zshrc
 zsh &
 wait
 
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto" &
+wait
+
+
+# zshrcの中身をコピ＝する
+
+cat aliases.sh >> ~/.zshrc
 source  ~/.zshrc
+
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+
 chsh -s /bin/zsh
+
 
 # Git Directories
 mkdir ~/Repositories
@@ -141,7 +145,7 @@ chmod 600 id_rsa
 cd ~/
 
 open 'https://github.com/settings/keys'
-open 'https://bitbucket.org/account/user/'
+open 'https://bitbucket.org/'
 
 cat ~/.ssh/id_rsa.pub | pbcopy
 
@@ -159,7 +163,6 @@ cat ~/.ssh/id_rsa.pub | pbcopy
 git config --global user.name "$username"
 git config --global user.email "$email"
 
-
 # Launch Installers
 open '/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app'
 open '/usr/local/Caskroom/google-japanese-ime/latest/GoogleJapaneseInput.pkg'
@@ -172,7 +175,9 @@ open '/Applications/Recordit.app'
 curl -L git.io/nodebrew | perl - setup &
 wait
 source ~/.zshrc
-nodebrew install-binary stable
+nodebrew install stable &
+wait
+source ~/.zshrc
 nodebrew use stable
 
 # Yarn modules
@@ -200,3 +205,19 @@ easy_install pip &
 wait
 
 pip install requests beautifulsoup4 lxml
+
+# Install ruby with rbenv
+
+rbenv install 2.5.1
+rbenv rehash
+rbenv global 2.5.1
+
+rbenv versions
+ruby -v
+which bundle
+
+
+# Vagrant plugins
+
+vagrant plugin install vagrant-share
+vagrant plugin install vagrant-hostsupdater

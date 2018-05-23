@@ -1,20 +1,6 @@
-#
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
-
-# Source Prezto.
-source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-
-
-# Customize to your needs...
-
 function git(){hub "$@"}
 
 # Aliases
-
 alias dc="docker-compose"
 alias dss="docker-sync-stack"
 
@@ -22,26 +8,21 @@ alias dss="docker-sync-stack"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Nodebrew
-
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # R言語利用のためzshのrを無効にする
-
 disable r
 
 # vcs_info 設定
 
 RPROMPT=""
-
 autoload -Uz vcs_info
 autoload -Uz add-zsh-hook
 autoload -Uz is-at-least
 autoload -Uz colors
 
 # 以下の3つのメッセージをエクスポートする
-#   $vcs_info_msg_0_ : 通常メッセージ用 (緑)
-#   $vcs_info_msg_1_ : 警告メッセージ用 (黄色)
-#   $vcs_info_msg_2_ : エラーメッセージ用 (赤)
+# $vcs_info_msg_0_ : 通常メッセージ用 (緑) | $vcs_info_msg_1_ : 警告メッセージ用 (黄色) | $vcs_info_msg_2_ : エラーメッセージ用 (赤)
 zstyle ':vcs_info:*' max-exports 3
 
 zstyle ':vcs_info:*' enable git svn hg bzr
@@ -52,10 +33,8 @@ zstyle ':vcs_info:*' actionformats '(%s)-[%b]' '%m' '<!%a>'
 zstyle ':vcs_info:(svn|bzr):*' branchformat '%b:r%r'
 zstyle ':vcs_info:bzr:*' use-simple true
 
-
 if is-at-least 4.3.10; then
-    # git 用のフォーマット
-    # git のときはステージしているかどうかを表示
+    # git 用のフォーマット | git のときはステージしているかどうかを表示
     zstyle ':vcs_info:git:*' formats '(%s)-[%b]' '%c%u %m'
     zstyle ':vcs_info:git:*' actionformats '(%s)-[%b]' '%c%u %m' '<!%a>'
     zstyle ':vcs_info:git:*' check-for-changes true
@@ -67,10 +46,8 @@ fi
 if is-at-least 4.3.11; then
     # git のときはフック関数を設定する
 
-    # formats '(%s)-[%b]' '%c%u %m' , actionformats '(%s)-[%b]' '%c%u %m' '<!%a>'
-    # のメッセージを設定する直前のフック関数
-    # 今回の設定の場合はformat の時は2つ, actionformats の時は3つメッセージがあるので
-    # 各関数が最大3回呼び出される。
+    # formats '(%s)-[%b]' '%c%u %m' , actionformats '(%s)-[%b]' '%c%u %m' '<!%a>'のメッセージを設定する直前のフック関数
+    # 今回の設定の場合はformat の時は2つ, actionformats の時は3つメッセージがあるので各関数が最大3回呼び出される。
     zstyle ':vcs_info:git+set-message:*' hooks \
                                             git-hook-begin \
                                             git-untracked \
@@ -79,9 +56,7 @@ if is-at-least 4.3.11; then
                                             git-stash-count
 
     # フックの最初の関数
-    # git の作業コピーのあるディレクトリのみフック関数を呼び出すようにする
-    # (.git ディレクトリ内にいるときは呼び出さない)
-    # .git ディレクトリ内では git status --porcelain などがエラーになるため
+    # git の作業コピーのあるディレクトリのみフック関数を呼び出すようにする (.git ディレクトリ内にいるときは呼び出さない) .git ディレクトリ内では git status --porcelain などがエラーになるため
     function +vi-git-hook-begin() {
         if [[ $(command git rev-parse --is-inside-work-tree 2> /dev/null) != 'true' ]]; then
             # 0以外を返すとそれ以降のフック関数は呼び出されない
@@ -93,8 +68,7 @@ if is-at-least 4.3.11; then
 
     # untracked ファイル表示
     #
-    # untracked ファイル(バージョン管理されていないファイル)がある場合は
-    # unstaged (%u) に ? を表示
+    # untracked ファイル(バージョン管理されていないファイル)がある場合はunstaged (%u) に ? を表示
     function +vi-git-untracked() {
         # zstyle formats, actionformats の2番目のメッセージのみ対象にする
         if [[ "$1" != "1" ]]; then
