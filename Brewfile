@@ -19,6 +19,7 @@ brew "hub"
 brew "imagemagick"
 brew "little-cms2"
 brew "mas"
+brew "mysql"
 brew "node"
 brew "php"
 brew "pngquant"
@@ -37,6 +38,7 @@ brew "vitorgalvao/tiny-scripts/cask-repair"
 cask "adobe-creative-cloud"
 cask "atom"
 cask "chatwork"
+cask "cheatsheet"
 cask "craftmanager"
 cask "cyberduck"
 cask "docker"
@@ -44,7 +46,6 @@ cask "dropbox"
 cask "evernote"
 cask "figma"
 cask "firefox"
-cask "flinto"
 cask "font-bebas-neue"
 cask "font-code"
 cask "font-code2000"
@@ -76,8 +77,11 @@ cask "invisionsync"
 cask "iterm2"
 cask "jasper"
 cask "kactus"
+cask "karabiner"
+cask "karabiner-elements"
 cask "kindle"
 cask "marvel"
+cask "mendeley"
 cask "metabase-app"
 cask "mono-mdk"
 cask "noodl"
@@ -103,10 +107,12 @@ cask "vivaldi"
 cask "webpquicklook"
 cask "zeplin"
 mas "Affinity Designer", id: 824171161
+mas "AnyDo", id: 944960179
 mas "Boxy", id: 1053031090
 mas "Disk Diag", id: 672206759
 mas "Display Menu", id: 549083868
 mas "feedly", id: 865500966
+mas "Flinto", id: 1021880828
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
