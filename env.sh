@@ -189,6 +189,7 @@ cp ~/mac-env-master/.editorconfig ~/.editorconfig
 # Open Download Links
 open 'http://sketchrunner.com/'
 open 'https://github.com/mathieudutour/git-sketch-plugin'
+open 'https://neonto.com/pro-plugins-install'
 
 # Extensions for VisualStudio Code
 code --install-extension EditorConfig.EditorConfig
