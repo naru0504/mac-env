@@ -5,7 +5,7 @@ email="naru.kubota@gmail.com" # TODO - Change this to your email address
 
 # Mac Local Settings
 
-echo "This script will set properties on OSX"
+echo "This script will set properties on macOS"
 
 ## Language
 defaults write NSGlobalDomain AppleLanguages "(en-US)"
@@ -181,7 +181,7 @@ source ~/.zshrc
 nodebrew use stable
 
 # Yarn modules
-yarn global add create-react-app preact-cli hexo-cli gatsby-cli electron electron-packager firebase-tools gulp parcel-bundler browser-sync docusaurus-init gitbook @storybook/cli hexo
+yarn global add create-react-app preact-cli hexo-cli gatsby-cli firebase-tools parcel-bundler docusaurus-init gitbook @storybook/cli nativefier
 
 # Users Files
 cp ~/mac-env-master/.editorconfig ~/.editorconfig
@@ -222,3 +222,8 @@ which bundle
 
 vagrant plugin install vagrant-share
 vagrant plugin install vagrant-hostsupdater
+
+
+# nativefier
+nativefier --name "asana" "https://app.asana.com/" --platform=darwin --arch=x64 --overwrite --badge
+nativefier --name "Use Panda" "https://usepanda.com/app" --platform=darwin --arch=x64 --overwrite --badge
