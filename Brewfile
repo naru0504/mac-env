@@ -10,6 +10,7 @@ tap "homebrew/services"
 tap "vitorgalvao/tiny-scripts"
 brew "ansible"
 brew "awscli"
+brew "carthage"
 brew "circleci"
 brew "docker", link: false
 brew "docker-compose"
@@ -54,6 +55,7 @@ cask "font-ionicons"
 cask "font-material-icons"
 cask "font-noto-sans-cjk-jp"
 cask "font-ricty-diminished"
+cask "fontbase"
 cask "framer"
 cask "framer-x"
 cask "franz"
@@ -83,6 +85,7 @@ cask "plant"
 cask "principle"
 cask "react-studio"
 cask "recordit"
+cask "rightfont"
 cask "rstudio"
 cask "sequel-pro"
 cask "sketch"
@@ -98,6 +101,7 @@ cask "visual-studio-code"
 cask "vivaldi"
 cask "webpquicklook"
 cask "zeplin"
+cask "zoomus"
 mas "Affinity Designer", id: 824171161
 mas "Boxy", id: 1053031090
 mas "Disk Diag", id: 672206759
@@ -105,6 +109,7 @@ mas "Display Menu", id: 549083868
 mas "feedly", id: 865500966
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
+mas "Install macOS Mojave", id: 0
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
 mas "MindNode", id: 1289197285
