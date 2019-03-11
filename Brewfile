@@ -22,7 +22,6 @@ brew "hub"
 brew "little-cms2"
 brew "imagemagick"
 brew "mas"
-brew "node"
 brew "php"
 brew "pngquant"
 brew "postgresql", restart_service: true
@@ -34,7 +33,7 @@ brew "rsync"
 brew "tree"
 brew "unison"
 brew "wp-cli"
-brew "yarn", args: ["without-node"]
+brew "yarn", args: ["--ignore-dependencies"]
 brew "zsh"
 brew "vitorgalvao/tiny-scripts/cask-repair"
 cask "adobe-creative-cloud"
