@@ -108,7 +108,6 @@ mas "Display Menu", id: 549083868
 mas "feedly", id: 865500966
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
-mas "Install macOS Mojave", id: 0
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
 mas "MindNode", id: 1289197285
