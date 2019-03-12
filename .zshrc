@@ -1,11 +1,7 @@
-function git(){hub "$@"}
-
 # Aliases
+function git(){hub "$@"}
 alias dc="docker-compose"
 alias dss="docker-sync-stack"
-
-# Brew Cask directory
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
@@ -14,7 +10,6 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 disable r
 
 # vcs_info 設定
-
 RPROMPT=""
 autoload -Uz vcs_info
 autoload -Uz add-zsh-hook
