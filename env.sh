@@ -162,6 +162,7 @@ cat ~/.ssh/id_rsa.pub | pbcopy
 
 git config --global user.name "$username"
 git config --global user.email "$email"
+git config --global push.default current
 
 # Launch Installers
 open '/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app'
