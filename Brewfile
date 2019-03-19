@@ -22,7 +22,6 @@ brew "hub"
 brew "little-cms2"
 brew "imagemagick"
 brew "mas"
-brew "node"
 brew "php"
 brew "pngquant"
 brew "postgresql", restart_service: true
@@ -80,6 +79,7 @@ cask "noodl"
 cask "notion"
 cask "orange"
 cask "origami-studio"
+cask "overflow"
 cask "pgadmin4"
 cask "phpstorm"
 cask "plant"
@@ -93,6 +93,7 @@ cask "sketch"
 cask "skype"
 cask "sourcetree"
 cask "spotify"
+cask "station"
 cask "stride"
 cask "sublime-text"
 cask "teamsql"
@@ -110,6 +111,7 @@ mas "Display Menu", id: 549083868
 mas "feedly", id: 865500966
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
+mas "Install macOS Mojave", id: 0
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
 mas "MindNode", id: 1289197285
