@@ -12,7 +12,7 @@ brew "ansible"
 brew "awscli"
 brew "carthage"
 brew "circleci"
-brew "docker"
+brew "docker", link: false
 brew "docker-compose"
 brew "duck"
 brew "fswatch"
@@ -39,6 +39,7 @@ brew "vitorgalvao/tiny-scripts/cask-repair"
 cask "adobe-creative-cloud"
 cask "atom"
 cask "avocode"
+cask "blue-jeans"
 cask "brave-browser"
 cask "chatwork"
 cask "craftmanager"
@@ -50,6 +51,7 @@ cask "evernote"
 cask "figma"
 cask "firefox"
 cask "flinto"
+cask "flux"
 cask "font-foundation-icons"
 cask "font-ionicons"
 cask "font-material-icons"
@@ -65,7 +67,9 @@ cask "gitter"
 cask "glyphs"
 cask "google-backup-and-sync"
 cask "google-chrome"
+cask "google-chrome-canary"
 cask "google-japanese-ime"
+cask "hazeover"
 cask "i1profiler"
 cask "imageoptim"
 cask "invisionsync"
@@ -73,17 +77,28 @@ cask "iterm2"
 cask "jasper"
 cask "kactus"
 cask "kindle"
+cask "luna-display"
 cask "marvel"
 cask "metabase"
 cask "mono-mdk"
 cask "noodl"
 cask "notion"
+cask "openinterminal"
+cask "opera"
 cask "orange"
 cask "origami-studio"
 cask "pgadmin4"
 cask "phpstorm"
 cask "plant"
 cask "principle"
+cask "pycharm-ce"
+cask "qlcolorcode"
+cask "qlimagesize"
+cask "qlmarkdown"
+cask "qlstephen"
+cask "qlvideo"
+cask "quicklook-json"
+cask "quicklookase"
 cask "react-studio"
 cask "recordit"
 cask "rightfont"
@@ -92,38 +107,44 @@ cask "sequel-pro"
 cask "sketch"
 cask "skype"
 cask "sourcetree"
+cask "spectacle"
 cask "spotify"
 cask "station"
 cask "stride"
 cask "sublime-text"
+cask "suspicious-package"
 cask "teamsql"
+cask "toggl"
 cask "vagrant"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "vivaldi"
 cask "webpquicklook"
+cask "wine-stable"
+cask "xquartz"
 cask "zeplin"
 cask "zoomus"
-mas "com.apple.dt.Xcode", id: 497799835
-mas "com.apple.garageband10", id: 682658836
-mas "com.apple.iMovieApp", id: 408981434
-mas "com.apple.iWork.Keynote", id: 409183694
-mas "com.apple.iWork.Numbers", id: 409203825
-mas "com.apple.iWork.Pages", id: 409201541
-mas "com.atlassian.trello", id: 1278508951
-mas "com.devhd.feedly.osx", id: 865500966
-mas "com.francescodilorenzo.Mailbro", id: 1053031090
-mas "com.ideasoncanvas.mindnode.macos", id: 1289197285
-mas "com.pixelmatorteam.pixelmator", id: 407963104
-mas "com.pixelmatorteam.pixelmator.x", id: 1289583905
-mas "com.readitlater.PocketMac", id: 568494494
-mas "com.rockysandstudio.Disk-Diag", id: 672206759
-mas "com.seriflabs.affinitydesigner", id: 824171161
-mas "com.sociomedia.Textwell.Mac", id: 905944937
-mas "com.tinyspeck.slackmacgap", id: 803453959
-mas "com.type-fu.TypeFu", id: 509818877
-mas "cx.c3.theunarchiver", id: 425424353
-mas "de.milchimgemuesefach.Display-Menu", id: 549083868
-mas "io.replia.Replia", id: 988307015
-mas "jp.co.ndc.stone", id: 1230288277
-mas "jp.naver.line.mac", id: 539883307
+mas "Affinity Designer", id: 824171161
+mas "Boxy", id: 1053031090
+mas "Dato", id: 1470584107
+mas "Disk Diag", id: 672206759
+mas "Display Menu", id: 549083868
+mas "feedly", id: 865500966
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "LINE", id: 539883307
+mas "MindNode", id: 1289197285
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Pixelmator", id: 407963104
+mas "Pixelmator Pro", id: 1289583905
+mas "Pocket", id: 568494494
+mas "Replia", id: 988307015
+mas "Slack", id: 803453959
+mas "stone", id: 1230288277
+mas "Textwell", id: 905944937
+mas "The Unarchiver", id: 425424353
+mas "Trello", id: 1278508951
+mas "Type Fu", id: 509818877
+mas "Xcode", id: 497799835
