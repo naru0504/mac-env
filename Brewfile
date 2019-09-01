@@ -16,6 +16,7 @@ brew "docker", link: false
 brew "docker-compose"
 brew "duck"
 brew "fswatch"
+brew "gettext"
 brew "git"
 brew "git-lfs"
 brew "hub"
@@ -106,6 +107,8 @@ cask "rstudio"
 cask "sequel-pro"
 cask "sketch"
 cask "skype"
+cask "skype-for-business"
+cask "slack"
 cask "sourcetree"
 cask "spectacle"
 cask "spotify"
@@ -125,7 +128,6 @@ cask "xquartz"
 cask "zeplin"
 cask "zoomus"
 mas "Affinity Designer", id: 824171161
-mas "Boxy", id: 1053031090
 mas "Dato", id: 1470584107
 mas "Disk Diag", id: 672206759
 mas "Display Menu", id: 549083868
@@ -137,11 +139,8 @@ mas "LINE", id: 539883307
 mas "MindNode", id: 1289197285
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Pixelmator", id: 407963104
 mas "Pixelmator Pro", id: 1289583905
 mas "Pocket", id: 568494494
-mas "Replia", id: 988307015
-mas "Slack", id: 803453959
 mas "stone", id: 1230288277
 mas "Textwell", id: 905944937
 mas "The Unarchiver", id: 425424353
