@@ -36,6 +36,9 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
+## Use Fn keys as Functions
+defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
+
 ## Set speed of Trackpad and Mouse
 defaults write NSGlobalDomain com.apple.mouse.scaling 2
 defaults write NSGlobalDomain com.apple.trackpad.scaling 2
@@ -79,6 +82,7 @@ defaults write com.apple.dock mru-spaces -bool false
 defaults write com.apple.dock persistent-apps -array
 defaults write com.apple.dock magnification -bool true
 defaults write com.apple.dock tilesize -int 55
+defaults write com.apple.dock show-recents -bool FALSE
 
 ## Setting of Finder
 defaults write com.apple.finder QuitMenuItem -bool true
@@ -121,17 +125,6 @@ wait
 
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto" &
 wait
-
-
-# zshrcの中身をコピ＝する
-
-cat aliases.sh >> ~/.zshrc
-source  ~/.zshrc
-
-setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done
 
 chsh -s /bin/zsh
 
