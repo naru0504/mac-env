@@ -194,7 +194,7 @@ open 'https://github.com/mathieudutour/git-sketch-plugin'
 open 'https://neonto.com/pro-plugins-install'
 
 # Extensions for VisualStudio Code
-code --install-extension EditorConfig.EditorConfig
+code --install-extension Shan.code-settings-sync
 
 # Install Python with Pyenv
 pyenv install 3.6.4
@@ -224,8 +224,3 @@ which bundle
 
 vagrant plugin install vagrant-share
 vagrant plugin install vagrant-hostsupdater
-
-
-# nativefier
-nativefier --name "asana" "https://app.asana.com/" --platform=darwin --arch=x64 --overwrite --badge
-nativefier --name "Use Panda" "https://usepanda.com/app" --platform=darwin --arch=x64 --overwrite --badge
