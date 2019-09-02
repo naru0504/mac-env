@@ -165,6 +165,10 @@ open '/Applications/CraftManager.app'
 open '/Applications/Backup and Sync.app'
 open '/Applications/Dropbox.app'
 open '/Applications/Recordit.app'
+open '/Applications/Spectacle.app'
+open '/Applications/Dato.app'
+open '/Applications/HazeOver.app'
+open '/Applications/duet.app'
 
 # Install Nodejs with Nodebrew
 curl -L git.io/nodebrew | perl - setup &
