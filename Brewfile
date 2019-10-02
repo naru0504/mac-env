@@ -43,6 +43,7 @@ cask "avocode"
 cask "blue-jeans"
 cask "brave-browser"
 cask "chatwork"
+cask "chromedriver"
 cask "craftmanager"
 cask "cyberduck"
 cask "docker"
@@ -111,9 +112,7 @@ cask "sourcetree"
 cask "spectacle"
 cask "spotify"
 cask "station"
-cask "sublime-text"
 cask "suspicious-package"
-cask "teamsql"
 cask "toggl"
 cask "vagrant"
 cask "virtualbox"
@@ -123,8 +122,6 @@ cask "webpquicklook"
 cask "xquartz"
 cask "zeplin"
 cask "zoomus"
-mas "Affinity Designer", id: 824171161
-mas "Dato", id: 1470584107
 mas "Disk Diag", id: 672206759
 mas "Display Menu", id: 549083868
 mas "feedly", id: 865500966
