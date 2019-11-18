@@ -13,7 +13,7 @@ brew "awscli"
 brew "carthage"
 brew "circleci"
 brew "contentful-cli"
-brew "docker"
+brew "docker", link: false
 brew "docker-compose"
 brew "duck"
 brew "fswatch"
