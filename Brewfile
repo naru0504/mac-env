@@ -8,22 +8,25 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "vitorgalvao/tiny-scripts"
+brew "amazon-ecs-cli"
 brew "ansible"
 brew "awscli"
 brew "carthage"
 brew "circleci"
 brew "contentful-cli"
-brew "docker", link: false
+brew "docker"
 brew "docker-compose"
 brew "duck"
 brew "fswatch"
-brew "gettext"
+brew "gettext", link: false
 brew "git"
 brew "git-lfs"
+brew "glib"
 brew "hub"
 brew "little-cms2"
 brew "imagemagick"
 brew "mas"
+brew "mysql@5.6"
 brew "php"
 brew "pngquant"
 brew "postgresql", restart_service: true
@@ -40,8 +43,8 @@ brew "zsh"
 brew "vitorgalvao/tiny-scripts/cask-repair"
 cask "adobe-creative-cloud"
 cask "atom"
+cask "authy"
 cask "avocode"
-cask "blue-jeans"
 cask "brave-browser"
 cask "chatwork"
 cask "craftmanager"
@@ -49,11 +52,11 @@ cask "cyberduck"
 cask "docker"
 cask "dropbox"
 cask "duet"
+cask "elgato-game-capture-hd"
 cask "evernote"
 cask "figma"
 cask "firefox"
 cask "flinto"
-cask "flux"
 cask "font-foundation-icons"
 cask "font-ionicons"
 cask "font-material-icons"
@@ -63,6 +66,7 @@ cask "fontbase"
 cask "framer"
 cask "framer-x"
 cask "franz"
+cask "genymotion"
 cask "gitbook-editor"
 cask "gitter"
 cask "glyphs"
@@ -83,6 +87,7 @@ cask "marvel"
 cask "metabase"
 cask "mono-mdk"
 cask "notion"
+cask "obs"
 cask "openinterminal"
 cask "opera"
 cask "orange"
@@ -106,7 +111,6 @@ cask "rstudio"
 cask "sequel-pro"
 cask "sketch"
 cask "skype"
-cask "skype-for-business"
 cask "slack"
 cask "sourcetree"
 cask "spectacle"
@@ -129,6 +133,7 @@ mas "feedly", id: 865500966
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
+mas "LadioCast", id: 411213048
 mas "LINE", id: 539883307
 mas "MindNode", id: 1289197285
 mas "Numbers", id: 409203825
@@ -138,6 +143,5 @@ mas "Pocket", id: 568494494
 mas "stone", id: 1230288277
 mas "Textwell", id: 905944937
 mas "The Unarchiver", id: 425424353
-mas "Trello", id: 1278508951
 mas "Type Fu", id: 509818877
 mas "Xcode", id: 497799835
