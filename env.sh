@@ -1,7 +1,7 @@
 # Set val of email and user name
 
-username="Naruhito Kubota" # TODO - Change this to your name
-email="naru.kubota@gmail.com" # TODO - Change this to your email address
+username="User Name" # TODO - Change this to your name
+email="abc@abc.com" # TODO - Change this to your email address
 
 # Mac Local Settings
 
@@ -128,7 +128,6 @@ wait
 
 chsh -s /bin/zsh
 
-
 # Git Directories
 mkdir ~/Repositories
 mkdir ~/.ssh
@@ -161,14 +160,11 @@ git config --global core.editor "vi"
 # Launch Installers
 open '/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app'
 open '/usr/local/Caskroom/google-japanese-ime/latest/GoogleJapaneseInput.pkg'
-open '/Applications/CraftManager.app'
 open '/Applications/Backup and Sync.app'
 open '/Applications/Dropbox.app'
 open '/Applications/Recordit.app'
-open '/Applications/Spectacle.app'
+open '/Applications/Rectangle.app'
 open '/Applications/Dato.app'
-open '/Applications/HazeOver.app'
-open '/Applications/duet.app'
 
 # Install Nodejs with Nodebrew
 curl -L git.io/nodebrew | perl - setup &
@@ -180,7 +176,7 @@ source ~/.zshrc
 nodebrew use stable
 
 # Yarn modules
-yarn global add create-react-app preact-cli hexo-cli gatsby-cli firebase-tools parcel-bundler docusaurus-init gitbook @storybook/cli nativefier
+yarn global add create-react-app create-astro preact-cli hexo-cli gatsby-cli firebase-tools parcel-bundler docusaurus-init gitbook @storybook/cli nativefier niconizer
 
 # Users Files
 cp ~/mac-env-master/.editorconfig ~/.editorconfig
@@ -188,7 +184,6 @@ cp ~/mac-env-master/.editorconfig ~/.editorconfig
 # Open Download Links
 open 'http://sketchrunner.com/'
 open 'https://github.com/mathieudutour/git-sketch-plugin'
-open 'https://neonto.com/pro-plugins-install'
 
 # Extensions for VisualStudio Code
 code --install-extension Shan.code-settings-sync
