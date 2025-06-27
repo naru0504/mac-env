@@ -101,6 +101,9 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 ## Set Finder view mode
 defaults write com.apple.Finder FXPreferredViewStyle clmv
 
+## Disable Click to show Desktop
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
+
 ## Reload Local Settings
 killall Dock
 killall Finder
