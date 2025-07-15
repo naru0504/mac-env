@@ -40,7 +40,7 @@ defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
 
 ## Set speed of Trackpad and Mouse
-defaults write NSGlobalDomain com.apple.mouse.scaling 2
+defaults write NSGlobalDomain com.apple.mouse.scaling 6
 defaults write NSGlobalDomain com.apple.trackpad.scaling 2
 
 ## Enable Three Fingers Drag
